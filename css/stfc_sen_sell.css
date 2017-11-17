@@ -1,0 +1,346 @@
+@charset "utf-8";
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.rent_sell_search_wrap {
+	width: 100%;
+}
+
+.rent_sell_search {
+	height: 52px;
+	padding: 15px 0px;
+}
+
+
+/*.rent_sell_select{height: 50px;}*/
+
+.rent_sell_select>input {
+	width: 930px;
+	height: 42px;
+}
+
+.rent_sell_bananwrap {
+	width: 100%;
+	min-width: 1200px;
+	height: 636px;
+}
+
+.rent_sell_bananwrap_center {
+	width: 1200px;
+	height: 666px;
+}
+
+.rent_sell_bananwrap1 {
+	width: 1200px;
+	height: 40px;
+	padding-top: 10px;
+	margin-bottom: 20px;
+}
+
+.rent_sell1 {
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	line-height: 30px;
+}
+
+.rent_sell_bananwrap2 {
+	width: 1200px;
+	height: 564px;
+}
+
+.rent_sell_bananwrap2_left {
+	width: 612px;
+	height: 564px;
+}
+
+.rent_sell_left1 {
+	width: 612px;
+	height: 36px;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.smil_bq {
+	padding: 6px 14px;
+	border-radius: 5px;
+}
+
+.sell_rent_houselist {
+	height: 762px;
+	overflow: hidden;
+}
+
+.sell_rent_houselist_center {
+	height: 762px;
+}
+
+.rent_sell_left2 {
+	margin-top: 5px;
+}
+
+.rent_sell_leftbananer {
+	width: 612px;
+	height: 444px;
+	overflow: hidden;
+	margin-bottom: 12px;
+	position: relative;
+}
+
+.rent_sell_leftbaner_ul>li>img {
+	width: 612px;
+	height: 444px;
+}
+
+.rent_sell_leftbananer2 {
+	width: 612px;
+	height: 60px;
+	position: relative;
+}
+
+.prev_button_rent {
+	height: 60px;
+	line-height: 60px;
+	width: 17px;
+}
+
+.smile_img_bananer {
+	width: 545px;
+	height: 60px;
+	overflow: hidden;
+	position: relative;
+	margin-left: 18px;
+}
+
+.smile_img_ul {
+	height: 60px;
+	position: absolute;
+}
+
+.next_button_rent {
+	height: 60px;
+	line-height: 60px;
+	width: 17px;
+}
+
+.smile_img_ul>li {
+	margin-left: 16px;
+	float: left;
+}
+
+.smile_img_ul>li:first-child {
+	margin-left: 0px;
+}
+
+.smile_img_ul>li>img {
+	width: 96px;
+	height: 60px;
+}
+
+.rent_sell_bananwrap2_right {
+	width: 552px;
+	height: 564px;
+}
+
+.rent_sell_right1 {
+	width: 552px;
+	height: 70px;
+	border-bottom: 1px solid #d9d9d9;
+	margin-top: -15px;
+}
+
+.rent_sell_right2 {
+	width: 552px;
+	height: 112px;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.smile1 {
+	width: 184px;
+	padding: 36px 0px;
+}
+
+.rent_sell_right3 {
+	width: 552px;
+	height: 163px;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.rent_sell_right3>p {
+	line-height: 50px;
+}
+
+.rent_sell_right4 {
+	height: 168px;
+	width: 552px;
+	padding-top: 24px;
+}
+
+.rent_sell_right4>img {
+	width: 129px;
+	height: 168px;
+}
+
+.broker_information {
+	width: 200px;
+	height: 168px;
+	margin-left: 24px;
+}
+
+.broker_information>p {
+	line-height: 45px;
+}
+
+.yvy {
+	width: 84px;
+	height: 30px;
+	border-radius: 3px;
+	line-height: 30px;
+}
+
+.sell_rent_left {
+	width: 858px;
+	height: 762px;
+}
+
+.sell_rent_left1 {
+	width: 858px;
+	height: 200px;
+	margin-bottom: 13px;
+}
+
+.sell_rent_left1_header {
+	width: 834px;
+	height: 48px;
+	padding-left: 24px;
+	border-bottom: 1px solid #f0f0f0;
+}
+/*房源描述*/
+.sell_rent_housebewrite , .sell_rent_traffic ,.sell_rent_around{
+	line-height: 28px;
+	padding-left: 24px;
+	font-family: "Microsoft YaHei","微软雅黑",arial,Tahoma,SimSun,sans-serif!important;
+}
+
+.sell_rent_left2 {
+	height: 116px;
+	line-height: 116px;
+	margin-top: 20px;
+	width: 834px;
+	padding: 0px 12px;
+}
+
+.smileheader {
+	width: 112px;
+	height: 38px;
+	line-height: 38px;
+	margin-left: 24px;
+}
+
+.sell_rent_right {
+	width: 312px;
+	height: 762px;
+}
+
+.sell_rent_right1 {
+	width: 312px;
+	height: 458px;
+}
+
+.sell_rent_right1_list1:hover {
+	background: #FAFAFA;
+}
+
+.sell_rent_right1_header {
+	width: 312px;
+	height: 48px;
+	line-height: 48px;
+	margin: 0 0 12px 0px;
+}
+
+.sell_rent_right1_list1 {
+	width: 300px;
+	padding-left: 12px;
+	height: 96px;
+}
+
+.hostclick_list1_text {
+	width: 180px;
+	padding: 15px 0px 0px 10px;
+}
+
+.hostclick_list1_img {
+	width: 96px;
+	height: 72px;
+	margin-top: 12px;
+}
+
+.sell_rent_right2 {
+	height: 280px;
+	margin-top: 24px;
+}
+
+.sell_rent_right2_ul>li {
+	margin-bottom: 10px;
+	width: 104px;
+	height: 90px;
+	float: left;
+}
+
+.sell_rent_bottom {
+	width: 100%;
+	min-width: 1200px;
+	height: 424px;
+	margin-top: 36px;
+}
+
+.sell_rent_bottom_center {
+	width: 1200px;
+	height: 424px;
+}
+
+.sell_rent_bottom_header {
+	width: 1200px;
+	border-bottom: 1px solid #999999;
+}
+
+.sell_rent_bottom_bananer {
+	width: 1080px;
+	height: 190px;
+	background: #ffffff;
+	margin-top: 26px;
+	padding: 40px 60px;
+}
+
+.sell_rent_bottom_ul {
+	width: 1056px;
+	height: 172px;
+}
+
+.sell_rent_bottom_ul>li {
+	float: left;
+	margin-right: 24px;
+}
+
+.sell_rent_bottom_ul>li:last-child {
+	margin-right: 0px;
+}
+
+.sell_rent_bottom_ul>li>img {
+	width: 192px;
+	height: 172px;
+}
+
+.sell_rent_bottom_text {
+	padding: 0px 5px;
+}
+
+.sell_rent_bottom_ul>li:hover {
+	color: #ffffff !important;
+	background: #f4892b;
+}
+
+.sell_rent_bottom_ul>li:hover font {
+	color: #FFFFFF !important;
+}

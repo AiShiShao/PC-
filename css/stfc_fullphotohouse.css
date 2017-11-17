@@ -1,0 +1,33 @@
+@charset "utf-8";
+li{list-style:none;}
+body{background: #fafafa;margin: 0px; padding: 0px;}
+*{margin: 0px;padding: 0px;}
+.full_this_location{width:1200px;height: 48px;line-height: 48px;margin-top: 15px;}
+
+.fullphont{width: 1152px;height: 756px;padding: 24px 24px 0px 24px;background: #ffffff;position: relative;}
+.fullphoto_center_img1{width:1152px;height: 648px;}
+.fullphoto_center_img1 >img{width:1152px;height: 648px;}
+.full_photo_choose{width: 1152px;height: 240px;position: absolute;top: 55%;}
+.full_photo_five{width: 760px;height: 124px;}
+.full_photo_five > ul{width: 760px;height: 124px;margin: 0px;padding: 0px;}
+.full_photo_five > ul >li{float: left;width: 122px;height: 122px;border: 2px solid #ffffff;margin-right: 25px;}
+.full_photo_five_hover{border: 2px solid #f4892b !important;}
+.full_photo_five > ul >li >img{width: 122px;height: 122px;}
+
+.full_photo_button{width: 1152px;height: 70px;}
+.full_photo_button_left{width: 500px;height: 70px;}
+.full_photo_button_right{width: 200px;height: 70px;}
+.full_button_ul {height: 70px;}
+.full_button_ul  >li{width: 80px;height: 70px;float: left;color: #ffffff;}
+.full_button_ul > li >img{float: left;margin: 0px  20px;width: 40px;height: 40px;}
+.full_button_ul > li >p{width: 100%;margin-top: 5px !important;}
+
+
+
+
+.full_photo_more{width: 1200px;height: 906px;}
+.full_photo_more_header{width: 1176px;padding-left: 24px;height: 48px;border-bottom: 1px solid #efefef;}
+.full_photo_more_header1{width: 156px;height: 45px;background: #f4892b;line-height: 45px;}
+.full_photo_more_house{width:1200px;height: 765px;}
+.full_photo_more_ul >li{width: 240px;height:312px;background: #f2f2f2;margin:36px 0px 0px 48px;float: left;}
+.full_photo_more_ul >li >img{width: 240px;height: 240px;}

@@ -1,0 +1,195 @@
+.branchoffice_header {
+				width: 100%;
+				min-width: 1200px;
+				height: 51px;
+				line-height: 51px;
+			}
+			
+			.full_this_location {
+				width: 1200px;
+				height: 51px;
+				line-height: 51px;
+			}
+			
+			.branchoffice_xq_card {
+				width: 100%;
+				height: 307px;
+				margin-bottom: 26px;
+			}
+			
+			.branchoffice_xq_card_center {
+				width: 1200px;
+				height: 307px;
+			}
+			.branchoffice_xq_card_ul_li{
+				width: 724px !important;
+				height: 259px !important;
+				border-bottom: none !important;
+			}
+			.card_branch_textarea{width: 480px !important;}
+			.card_branch_textarea > textarea{width: 480px !important;}
+			.icon_card{width: 168px !important;}
+			.branchoffice_xq_card_right{width: 438px;height: 271px;padding-top: 36px;}
+			.branchoffice_xq_card_right2{width: 410px;height: 188px;border: 2px solid #f4892b;margin: 33px 24px 0px 0px;}
+			.branchoffice_xq_card_right2_img{width: 133px;height: 169px;margin-top: 19px;}
+			.branchoffice_xq_card_right2_img > img{width: 133px;height: 169px;}
+			.branchoffice_xq_card_right2_information2{width: 252px;height: 126px;margin-top: 33px;}
+			.branchoffice_p2{padding: 12px 0px;border-bottom:1px solid #dadada;}
+			.branchoffice_call{width: 252px;height: 28px;line-height: 28px;margin: 14px 0px;}
+			.call_broker{background: #4f80dc;height: 28px;line-height: 28px;width: 91px;border-radius: 5px;margin-right: 8px;}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			.branchoffice_xq_count {
+				width: 100%;
+				height: 1128px;
+				min-width: 1200px;
+			}
+			
+			.branchoffice_xq_count_center {
+				width: 1200px;
+				height: 1128px;
+			}
+			
+			.branchoffice_xq_count_right {
+				width: 861px;
+				height: 1116px;
+			}
+			
+			.branchoffice_xq_tabs {
+				width: 861px;
+				height: 195px;
+			}
+			
+			.branchoffice_xq_tabs_header {
+				width: 861px;
+				height: 48px;
+				line-height: 48px;
+				background: #f2f2f2;
+			}
+			
+			.branchoffice_xq_tabs_ul>li {
+				cursor: pointer;
+				float: left;
+				width: 146px;
+				height: 46px;
+				line-height: 47px;
+				text-align: center;
+				border: 1px solid #e5e3e6;
+			}
+			
+			.tabsli {
+				background: #ffffff;
+				border: none !important;
+				border-top: 2px solid #f4892b !important;
+			}
+			
+			.branchoffice_xq_tabs_lists {
+				padding-left: 18px;
+				width: 843px;
+				height: 126px;
+				padding-top: 24px;
+			}
+			
+			.branchoffice_list1 {
+				width: 840px;
+				height: 18px;
+				line-height: 18px;
+				margin-bottom: 20px;
+			}
+			
+			.branchoffice_list1_ul {
+				width: 830px;
+				height: 20px;
+			}
+			
+			.branchoffice_list1_ul>li {
+				margin-right: 24px;
+				float: left;
+				cursor: pointer;
+			}
+			
+			.branchoffice_xq_list1 {
+				width: 837px;
+				height: 170px;
+				padding: 20px 12px;
+				border-bottom: 1px solid #d5d4d4;
+				cursor: pointer;
+			}
+			
+			.branchoffice_xq_list1>img {
+				width: 184px;
+				height: 155px;
+				float: left;
+				margin-right: 20px;
+			}
+			
+			.branchoffice_xq_list1:hover {
+				background: #fafafa !important;
+			}
+			
+			.sell_box {
+				float: left;
+				width: 620px;
+				vertical-align: middle;
+			}
+			
+			.sell_box>h3 {
+				width: 620px;
+				margin-bottom: 25px !important;
+			}
+			
+			.sell_box>.p1 {
+				width: 620px;
+			}
+			
+			.sell_box_list {
+				block;
+				position: relative;
+				margin-top: 25px;
+				margin-bottom: 10px;
+			}
+			
+			.list_area {
+				float: left;
+				margin-right: 20px;
+			}
+			
+			.list_price {
+				float: left;
+				margin: 0px 20px 0px 80px;
+			}
+			
+			.list_price_span {
+				color: #333333 !important;
+			}
+			
+			.font_list_phone {
+				display: inline-block;
+				margin-right: 20px;
+			}
+			
+			.font_list_phone>img {
+				margin-top: 2px;
+				float: left;
+				margin-right: 5px;
+			}
+			
+			.branchoffice_xq_list1_bottom_p {
+				width: 150px;
+				height: 15px;
+				position: relative;
+			}
+			
+			.branchoffice_xq_list1_bottom_p>img {
+				width: 12px;
+				height: 12px;
+				float: left;
+				margin: 2px 5px;
+			}

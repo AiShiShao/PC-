@@ -1,0 +1,276 @@
+		.interlocution_main {
+			width: 100%;
+			min-width: 1200px;
+			height: 1022px;
+		}
+		
+		.interlocution_main_center {
+			width: 1200px;
+			height: 1022px;
+		}
+		
+		.interlocution_main_left {
+			height: 990px;
+			width: 312px;
+		}
+		
+		.interlocution_main_right , .interlocution_main_rights{
+			height: 990px;
+			width: 856px;
+			padding-left: 24px;
+		}
+		
+		.interlocution_main_left1 {
+			width: 312px;
+			height: 244px;
+			border-top: 2px solid #f4892b;
+		}
+		
+		.interlocution_main_left2 {
+			width: 312px;
+			height: 254px;
+		}
+		
+		.interlocution_main_left3 {
+			width: 312px;
+			height: 194px;
+		}
+		
+		.interlocution_main_left4 {
+			width: 312px;
+			height: 194px;
+		}
+		
+		.interlocution_main_left_header {
+			height: 48px;
+			line-height: 48px;
+		}
+		
+		.interlocution_main_left1_header {
+			width: 312px;
+			height: 36px;
+			line-height: 36px;
+			border-left: 1px solid #e5e3e6;
+		}
+		
+		.interlocution_main_left1_header>ul>li {
+			cursor: pointer;
+			float: left;
+			width: 103px;
+			border-right: 1px solid #e5e3e6;
+			background: #f2f1f0;
+		}
+		
+		.interlocution_main_left1_count1 {
+			width: 312px;
+			height: 208px;
+		}
+		
+		.interlocution_main_left1_header_ul2 {
+			width: 312px;
+			height: 206px;
+		}
+		
+		.interlocution_main_left1_header_ul2>li {
+			cursor: pointer;
+			color: #333333;
+			height: 48px;
+			width: 288px;
+			line-height: 48px;
+			padding-left: 24px;
+			border-bottom: 1px solid #e6e6e6;
+			background: #ffffff;
+		}
+		
+		.li_line {
+			width: 20px;
+			height: 20px;
+			margin-right: 8px;
+			color: #ffffff;
+			line-height: 20px;
+			text-align: center;
+			background: #999999
+		}
+		
+		.interlocution_main_left1_header_ul3 {
+			width: 312px;
+			height: 146px;
+		}
+		
+		.interlocution_main_left1_header_ul3>li {
+			padding-left: 60px;
+			width: 248px;
+			height: 48px;
+			line-height: 48px;
+			border-bottom: 1px solid #e6e6e6;
+		}
+		
+		.about_li {
+			border-left: 4px solid #f4892b;
+		}
+		
+		.interlocution_main_right_header {
+			width: 832px;
+			height: 50px;
+			border-bottom: 1px solid #efefef;
+			/*padding-left: 24px;*/
+			margin-bottom: 26px;
+		}
+		
+		.heade_title {
+			width: 108px;
+			height: 43px;
+			line-height: 43px;
+		}
+		.heade_titles{
+			width: 300px;
+			height: 43px;
+			line-height: 43px;
+		}
+		.heade_back{
+			width: 80px;
+			height: 43px;
+			line-height: 43px;
+		}
+		.interlocution_main_right1 {
+			width: 832px;
+			height: 260px;
+			padding-left: 24px;
+			margin-bottom: 15px;
+		}
+		
+		.interlocution_main_right1_text {
+			width: 811px;
+			height: 154px;
+			margin-top: 22px;
+			border-radius: 8px;
+			position: relative;
+			cursor: pointer;
+		}
+		.interlocution_main_right1_texts{
+			width: 811px;
+			padding:5px 8px;
+			margin-top: 15px;
+			border-radius: 8px;
+			position: relative;
+		}
+		.interlocution_main_right1_wd {
+			width: 288px;
+			height: 36px;
+			line-height: 36px;
+			margin-bottom: 24px;
+		}
+		
+		.interlocution_main_right1_text_p {
+			padding: 10px;
+		}
+		
+		.interlocution_main_right1_text_p2 {
+			width: 264px;
+			height: 17px;
+			line-height: 17px;
+			position: absolute;
+			right: 20px;
+			bottom: 24px;
+		}
+		
+		.meinterlocution_hide {
+			display: none;
+		}
+		
+		.interlocution_main2 {
+			height: 596px;
+			width: 100%;
+			padding-top: 93px;
+		}
+		
+		.interlocution_main2_center {
+			width: 1200px;
+			height: 596px;
+		}
+		
+		.interlocution_main2_center_header {
+			width: 1176px;
+			height: 48px;
+			line-height: 48px;
+			padding-left: 24px;
+			border-bottom: 1px solid #f0f0f0;
+		}
+		
+		.interlocution_main2_information {
+			width: 288px;
+			height: 38px;
+			line-height: 38px;
+		}
+		
+		.interlocution_main2_center_body {
+			padding: 20px;
+		}
+		
+		.zhuti_insert {
+			margin-bottom: 20px;
+		}
+		
+		.zhuti_insert>input {
+			width: 1137px;
+			height: 48px;
+			line-height: 48px;
+			padding-left: 15px;
+			border: none;
+		}
+		
+		.neirong_insert {
+			margin-bottom: 20px;
+		}
+		
+		.neirong_insert>textarea {
+			resize: none;
+			width: 1137px;
+			height: 200px;
+			line-height: 25px;
+			padding-left: 15px;
+			border: none;
+		}
+		
+		.interlocution_main2_bottom {
+			height: 168px;
+			padding-left: 24px;
+			width: 644px;
+		}
+		
+		.fenlei_question {
+			width: 144px;
+			margin-right: 24px;
+		}
+		
+		.fenlei_question>ul>li {
+			text-align: center;
+			cursor: pointer;
+			width: 144px;
+			height: 38px;
+			line-height: 38px;
+			border-bottom: 1px solid #f0f0f0;
+		}
+		
+		.fenlei_question2 {
+			border-bottom: 1px solid #f0f0f0;
+		}
+		
+		.fenlei_question3>ul>li {
+			height: 48px;
+			line-height: 48px;
+			width: 144px;
+			margin-bottom: 12px;
+		}
+		
+		.fenlei_question3_li2>input {
+			height: 48px;
+			line-height: 48px;
+			width: 144px;
+			border: none;
+		}
+		
+		.fenlei_question3_li1>img {
+			height: 48px;
+			width: 144px;
+		}

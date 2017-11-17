@@ -1,0 +1,21 @@
+.map_count{width: 100%;height: 876px;min-width: 1200px;}
+			.map_count_center{width: 1200px;height: 875px;border: 1px solid #dedede;border-top: none;}
+			.map_count_header{width: 1200px;height: 36px;margin-bottom: 24px;}
+			.map_count_header_search{width: 240px;height: 28px;border: 1px solid #dedede;border-left: none;margin-right: 12px;}
+			.map_count_header_search >input{width: 200px;height: 28px;border: none;padding-left: 8px;}
+			.search_img{width: 30px;height: 30px;margin: -1px -1px 0px 0px;}
+			.search_img > img{width: 15px;height: 15px;margin: 7px;}
+			.location_map{width: 120px;height: 30px;line-height: 30px;margin-right:45px;}
+			.location_map >img{margin:7px;}
+			
+			.map_select{width: 780px;}
+			.map_select1{width: 120px;height: 30px;background: #e6e6e6;margin-right: 12px;float: left;}
+			.map_select1 > select{width: 115px;height: 30px;outline: none;border: none;-webkit-appearance: none; -moz-appearance: none;background: url("../img/select.png") no-repeat scroll right center transparent;padding: 0px 18px 0px 5px;}
+			.map_select1:last-child{margin-right: 0px;}
+			
+			.map_count_main{width: 1200px;height: 815px;border-top: 1px solid #dedede;}
+			
+			#allmap {
+				width: 1200px;
+				height: 816px;
+			}

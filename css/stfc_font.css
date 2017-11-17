@@ -1,0 +1,198 @@
+﻿@charset "utf-8";
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+p {
+	margin: 0 0 0 0 !important;
+}
+.div_float{
+	float:left;
+}
+.div_float1{
+	float:right;
+}
+.font_aline {
+	text-align: left;
+}
+
+.font_aline1 {
+	text-align: center;
+}
+
+.font_aline2 {
+	text-align: right;
+}
+
+.font_size12 {
+	font-size: 12px;
+}
+
+.font_size14 {
+	font-size: 14px;
+}
+
+.font_size15 {
+	font-size: 15px;
+}
+
+.font_size18 {
+	font-size: 18px;
+}
+
+.font_size24 {
+	font-size: 24px;
+}
+
+.font_size52 {
+	font-size: 52px;
+}
+
+.font_size30 {
+	font-size: 30px;
+}
+
+.font_indent2 {
+	text-indent: 2px;
+}
+
+.font_indent25 {
+	text-indent: 25px !important;
+}
+
+.font-spacing1 {
+	letter-spacing: 1px !important;
+}
+
+.font-spacing3 {
+	letter-spacing: 3px !important;
+}
+
+.font-spacing5 {
+	letter-spacing: 5px !important;
+}
+
+.div_margin0 {
+	margin: 0 0 0 0;
+}
+
+.div_padding0 {
+	padding: 0 0 0 0;
+}
+
+.div_display {
+	display: inline-block;
+}
+
+.font_none {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.ub-ac {
+	position: relative;
+	display: -webkit-box !important;
+	-webkit-box-align: center;
+	box-align: center;
+}
+
+.ub-f1 {
+	position: relative;
+	-webkit-box-flex: 1;
+	box-flex: 1;
+}
+
+.line1 {
+	width: 100%;
+	/*font-family: "宋体";*/
+	-webkit-line-clamp: 1;
+}
+
+.hb-box {
+	-moz-box-orient: vertical;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;
+}
+
+.font_padding_left {
+	padding-left: 8px;
+}
+
+.font_padding_left2 {
+	padding-left: 18px;
+}
+
+.font_padding_right {
+	padding-right: 8px;
+}
+
+.font_margin {
+	margin: 0 auto;
+}
+
+.font_margin1 {
+	margin-bottom: 5px !important;
+}
+
+.font_margin10 {
+	margin-bottom: 10px !important;
+}
+
+.font_margin2 {
+	margin: 15px 0px !important;
+}
+
+.margin10 {
+	margin-right: 10px;
+}
+
+.font_margin3 {
+	margin-top: 48px;
+}
+
+.font_margin4 {
+	margin-top: 33px;
+}
+
+.font_margin5 {
+	margin-left: 45px;
+}
+
+.font_margin6 {
+	margin-left: 10px;
+}
+
+.font_margin7 {
+	margin-top: 3px !important;
+}
+
+.font_margin8 {
+	margin: 8px 0px !important;
+}
+
+.font_margin_top5 {
+	margin-top: 5px !important;
+}
+
+.font_margin28 {
+	margin-left: 28px !important;
+}
+
+.font_margin-10 {
+	margin-left: -10px !important;
+}
+
+.font_margin5s {
+	margin-left: 5px !important;
+}
+
+.font_margin_top1 {
+	margin-top: 1px !important;
+}

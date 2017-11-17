@@ -1,0 +1,68 @@
+.selling_houselist {
+			height: 1500px;
+		}
+		
+		.broker_list2 {
+			height: 585px;
+		}
+		
+		.broker_list {
+			padding: 18px 18px 0px 18px;
+			height: 510px;
+		}
+		
+		.broker_ul {
+			height: 480px;
+		}
+		
+		.broker_ul>li {
+			width: 158px;
+			height: 175px;
+			float: left;
+		}
+		
+		.broker_ul>li>img {
+			width: 158px;
+			height: 112px;
+		}
+		
+		.broker_center_wrap {
+			height: 1500px;
+		}
+		
+		.broker_center {
+			height: 1500px;
+		}
+		
+		.broker_left {
+			height: 1400px;
+		}
+		
+		.brokerli {
+			margin-right: 20px;
+		}
+		
+		.broker_right_list {
+			margin-bottom: 30px;
+		}
+		
+		.broker_paging {
+			width: 770px;
+		}
+		
+		.name_p1 {
+			margin-bottom: 20px !important;
+		}
+		
+		.best_anli>p {
+			margin-bottom: 5px !important;
+		}
+		
+		.broker_list1 {
+			height: 180px;
+		}
+		
+		.broker_list1>img {
+			width: 144px;
+			height: 180px;
+		}

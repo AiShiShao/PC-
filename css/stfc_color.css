@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+.font_color{
+	/*导航黄*/
+	color: #ff9000 !important;
+}
+.font_color1{
+	/*导航电话红*/
+	color: #e14452 !important;
+}
+
+.font_color2{
+	/*数字橙*/
+	color: #ff4e00 !important;
+}
+.font_color3{
+	color: #ffffff !important;
+}
+.font_color4{
+	color: #666666 !important;
+}
+.font_color5{
+	/* 经纪人红*/
+	color: #dc0322 !important;
+}
+.font_color6{
+	color: #333333 !important;
+}
+.font_color7{
+	/*小字灰色*/
+	color: #9b9a9a !important;
+}
+
+.font_bg_color1{
+	/*首页bananer黄*/
+	background: #f4892b !important;
+	text-align: center;
+	color: #ffffff;
+}
+.font_bg_color2{
+	background: #ffffff !important;
+}
+.font_bg_color3{
+background: #fafafa !important;
+}
+.font_bg_color4{/*小标题背景黄*/background: #f4892b !important;}
+.font_bg_color5{/*问答灰色*/background: #faf7f7 !important;}
