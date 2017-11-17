@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>出售房</title>
+	</head>
+	<link rel="stylesheet" href="../css/stfc_font.css" />
+	<link rel="stylesheet" href="../css/stfc_color.css" />
+	<link rel="stylesheet" href="../css/stfc_base.css" />
+	<link rel="stylesheet" href="../css/stfc_sellinghouse.css" />
+
+	<body>
+		<div class="mian font_bg_color3">
+			<div class="sellhouse_search">
+				<div class="sell_select1">
+					<select>
+						<option>宿松县</option>
+						<option>宿松县</option>
+						<option>宿松县</option>
+						<option>宿松县</option>
+					</select>
+				</div>
+				<div class="sell_search">
+					<input type="text" placeholder="输入关键字查找          例如：融创尊品 |　聚福园　| 中汇广场" />
+					<img src="../img/bananer_search.png" />
+				</div>
+			</div>
+			<div class="sellhouse_choose">
+				<span>您已选择：</span>
+				<div class="city_map_click">
+					<span class="city_map_click_span">重设条件</span>
+				</div>
+				<div class="city_keep">
+					<img src="../img/keep.png" />
+					<span>保存条件</span>
+				</div>
+			</div>
+			<div class="city_map_choose">
+				<div class="city_choose_center">
+					<ul class="city_choose_center_ul">
+						<li class="citylihover">按区域查询</li>
+						<li>地图找房</li>
+					</ul>
+					<div>
+						<div class="city_lists">
+							<div class="city_list1">
+								<label>区域:</label>
+								<ul class="city_list1_ul" id="A">
+									<li>不限<i>X</i></li>
+									<li>宿松县<i>X</i></li>
+									<li>一松县<i>X</i></li>
+									<li>二松县<i>X</i></li>
+								</ul>
+							</div>
+							<div class="city_list1">
+								<label>片区:</label>
+								<ul class="city_list1_ul" id="B">
+									<li>不限<i>X</i></li>
+									<li>城东片<i>X</i></li>
+									<li>城南片<i>X</i></li>
+									<li>城西片<i>X</i></li>
+									<li>城北片<i>X</i></li>
+									<li>城中片<i>X</i></li>
+								</ul>
+							</div>
+							<div class="city_list1">
+								<label>租金:</label>
+								<ul class="city_list1_ul" id="C">
+									<li>不限<i>X</i></li>
+									<li>200元以下<i>X</i></li>
+									<li>200-400元<i>X</i></li>
+									<li>400-600元<i>X</i></li>
+									<li>600-800元<i>X</i></li>
+									<li>800-1000元<i>X</i></li>
+									<li>1200元以上<i>X</i></li>
+								</ul>
+								<div class="city_area">
+									<div class="area1">
+										<input type="text" id="input1" />
+									</div>
+									<div class="area2">
+										—
+									</div>
+									<div class="area1">
+										<input type="text" id="input2" />
+									</div>
+									<div class="area2">
+										元/月
+									</div>
+									<button class="area_submit">确定</button>
+								</div>
+							</div>
+							<div class="city_list1">
+								<label>面积:</label>
+								<ul class="city_list1_ul" id="D">
+									<li>不限<i>X</i></li>
+									<li>50m²以下<i>X</i></li>
+									<li>50-90m²<i>X</i></li>
+									<li>90-120m²<i>X</i></li>
+									<li>120-144m²<i>X</i></li>
+									<li>144-160m²<i>X</i></li>
+									<li>160m²以上<i>X</i></li>
+								</ul>
+
+							</div>
+							<div class="city_list1">
+								<label>厅室:</label>
+								<ul class="city_list1_ul" id="E">
+									<li>不限<i>X</i></li>
+									<li>一室<i>X</i></li>
+									<li>二室<i>X</i></li>
+									<li>三室<i>X</i></li>
+									<li>四室<i>X</i></li>
+									<li>五室<i>X</i></li>
+								</ul>
+							</div>
+							<div class="city_list1">
+								<label>分类:</label>
+								<ul class="city_list1_ul" id="F">
+									<li>不限<i>X</i></li>
+									<li>单门独院<i>X</i></li>
+									<li>套间<i>X</i></li>
+									<li>店面<i>X</i></li>
+									<li>地皮<i>X</i></li>
+								</ul>
+							</div>
+							<div class="city_list1">
+								<label>更多:</label>
+								<select>
+									<option>装修选择</option>
+									<option>简装</option>
+									<option>精装</option>
+									<option>毛培</option>
+								</select>
+								<select>
+									<option>楼层选择</option>
+									<option>10层以下</option>
+									<option>10-18层</option>
+									<option>18层以上</option>
+								</select>
+								<select>
+									<option>房龄选择</option>
+									<option>1-5年</option>
+									<option>5-10年</option>
+									<option>10年以上</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="selling_houselist">
+				<div class="selling_houselist_center">
+					<div class="sell_houselist_left">
+						<div class="sell_hosuelist_left_header">
+							<div class="div_float sell_house_left_header_text font_size30 font-spacing5 font_aline1">全部房源</div>
+						</div>
+						<div class="sell_house_left_paix">
+							<span>排序</span>
+							<select>
+								<option>选择排序</option>
+								<option>选择排序</option>
+								<option>选择排序</option>
+								<option>选择排序</option>
+
+							</select>
+							<div class="sell_house_left_span1">总价</div>
+							<div class="sell_house_left_span1">面积</div>
+						</div>
+						<div class="sell_hosuelist_left_lists">
+							<div class="sell_hosuelist_left_list1 ub-ac ub-f1">
+								<img src="../img/img1.png" class="ub-ac" />
+								<div class="sell_box">
+									<h3 class="font_none line1 ub-ac">中央豪庭  豪华装修，南北通透，高档生活小区</h3>
+									<p class="font_none line1 ub-ac p1">4室1厅1厨1卫 | 小高层(9/11) | 朝向(南) | 房龄(2012) | 豪装(房产证)</p>
+									<div class="font_none line1 font_size18 font_color sell_box_list">
+										<div class="list_area"><b>面积126m²</b></div>
+										<div class="list_price">
+											85万元
+											<span class="list_price_span font_size12">(6000/平方米)</span>
+										</div>
+										<div class="font_list_phone">
+											<img src="../img/list_phone.png" />
+											<span>17734789773</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sell_hosuelist_left_list1 ub-ac ub-f1">
+								<img src="../img/img1.png" class="ub-ac" />
+								<div class="sell_box">
+									<h3 class="font_none line1 ub-ac">中央豪庭  豪华装修，南北通透，高档生活小区</h3>
+									<p class="font_none line1 ub-ac p1">4室1厅1厨1卫 | 小高层(9/11) | 朝向(南) | 房龄(2012) | 豪装(房产证)</p>
+									<div class="font_none line1 font_size18 font_color sell_box_list">
+										<div class="list_area"><b>面积126m²</b></div>
+										<div class="list_price">
+											85万元
+											<span class="list_price_span font_size12">(6000/平方米)</span>
+										</div>
+										<div class="font_list_phone">
+											<img src="../img/list_phone.png" />
+											<span>17734789773</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sell_hosuelist_left_list1 ub-ac ub-f1">
+								<img src="../img/img1.png" class="ub-ac" />
+								<div class="sell_box">
+									<h3 class="font_none line1 ub-ac">中央豪庭  豪华装修，南北通透，高档生活小区</h3>
+									<p class="font_none line1 ub-ac p1">4室1厅1厨1卫 | 小高层(9/11) | 朝向(南) | 房龄(2012) | 豪装(房产证)</p>
+									<div class="font_none line1 font_size18 font_color sell_box_list">
+										<div class="list_area"><b>面积126m²</b></div>
+										<div class="list_price">
+											85万元
+											<span class="list_price_span font_size12">(6000/平方米)</span>
+										</div>
+										<div class="font_list_phone">
+											<img src="../img/list_phone.png" />
+											<span>17734789773</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sell_hosuelist_left_list1 ub-ac ub-f1">
+								<img src="../img/img1.png" class="ub-ac" />
+								<div class="sell_box">
+									<h3 class="font_none line1 ub-ac">中央豪庭  豪华装修，南北通透，高档生活小区</h3>
+									<p class="font_none line1 ub-ac p1">4室1厅1厨1卫 | 小高层(9/11) | 朝向(南) | 房龄(2012) | 豪装(房产证)</p>
+									<div class="font_none line1 font_size18 font_color sell_box_list">
+										<div class="list_area"><b>面积126m²</b></div>
+										<div class="list_price">
+											85万元
+											<span class="list_price_span font_size12">(6000/平方米)</span>
+										</div>
+										<div class="font_list_phone">
+											<img src="../img/list_phone.png" />
+											<span>17734789773</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sell_hosuelist_left_list1 ub-ac ub-f1">
+								<img src="../img/img1.png" class="ub-ac" />
+								<div class="sell_box">
+									<h3 class="font_none line1 ub-ac">中央豪庭  豪华装修，南北通透，高档生活小区</h3>
+									<p class="font_none line1 ub-ac p1">4室1厅1厨1卫 | 小高层(9/11) | 朝向(南) | 房龄(2012) | 豪装(房产证)</p>
+									<div class="font_none line1 font_size18 font_color sell_box_list">
+										<div class="list_area"><b>面积126m²</b></div>
+										<div class="list_price">
+											85万元
+											<span class="list_price_span font_size12">(6000/平方米)</span>
+										</div>
+										<div class="font_list_phone">
+											<img src="../img/list_phone.png" />
+											<span>17734789773</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--分页-->
+						<div class="selling_paging newpaging">
+							<div class="selling_paging_center">
+								<div class="selling_paging_left left_paging_right div_float">上一页</div>
+								<div class="selling_paging_num div_float">
+									<ul>
+										<li>1</li>
+										<li>2</li>
+										<li>3</li>
+										<li>4</li>
+										<li>5</li>
+										<li>6</li>
+										<li>7</li>
+										<li>8</li>
+									</ul>
+								</div>
+								<div class="selling_paging_right left_paging_right div_float">下一页</div>
+							</div>
+						</div>
+					</div>
+					<div class="sell_houselist_right">
+						<div class="sell_houselist_right1">
+							<div class="selllist1_header font_aline1 font_color3 font_size18 font-spacing5">店面展示</div>
+							<div class="sell_right_ban">
+								<img src="../img/main_right_ban.png" />
+							</div>
+						</div>
+
+						<div class="sell_houselist_right1 sell_houselist2">
+							<div class="selllist1_header font_aline1 font_color3 font_size18 font-spacing5">实用工具</div>
+							<div class="sell_right_ban sell_right2">
+								<ul class="sell_right2_ul">
+									<li class="font_aline1">
+										<img src="../img/fangdai.png" />
+										<p class="font_aline1">房贷计算</p>
+									</li>
+									<li class="font_aline1">
+										<img src="../img/shui.png" />
+										<p class="font_aline1">税费计算</p>
+									</li>
+									<li class="font_aline1">
+										<img src="../img/hetong.png" />
+										<p class="font_aline1">购房合同</p>
+									</li>
+									<li class="font_aline1">
+										<img src="../img/huandai.png" />
+										<p class="font_aline1">提前还贷</p>
+									</li>
+									<li class="font_aline1">
+										<img src="../img/pinggu.png" />
+										<p class="font_aline1">购房能力评估</p>
+									</li>
+									<li class="font_aline1">
+										<img src="../img/liucehng.png" />
+										<p class="font_aline1">购房流程</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="sell_houselist_right1 sell_houselist3">
+							<div class="selllist1_header font_aline1 font_color3 font_size18 font-spacing5">热点点击排行</div>
+							<div class="sell_house_hot">
+								<div class="host_list1">
+									<img src="../img/bananer1.jpg" class="hot_list_img div_float" />
+									<div class="host_list1_text div_float ">
+										<p>套间三室二厅</p>
+										<p class="font_none">金水区陇海中路与大学中路交叉口</p>
+									</div>
+									<div class="host_list1_right font_color font_none">
+										21万/110²
+									</div>
+								</div>
+								<div class="host_list1">
+									<img src="../img/bananer1.jpg" class="hot_list_img div_float" />
+									<div class="host_list1_text div_float ">
+										<p>套间三室二厅</p>
+										<p class="font_none">金水区陇海中路与大学中路交叉口</p>
+									</div>
+									<div class="host_list1_right font_color font_none">
+										21万/110²
+									</div>
+								</div>
+								<div class="host_list1">
+									<img src="../img/bananer1.jpg" class="hot_list_img div_float" />
+									<div class="host_list1_text div_float ">
+										<p>套间三室二厅</p>
+										<p class="font_none">金水区陇海中路与大学中路交叉口</p>
+									</div>
+									<div class="host_list1_right font_color font_none">
+										21万/110²
+									</div>
+								</div>
+								<div class="host_list1">
+									<img src="../img/bananer1.jpg" class="hot_list_img div_float" />
+									<div class="host_list1_text div_float ">
+										<p>套间三室二厅</p>
+										<p class="font_none">金水区陇海中路与大学中路交叉口</p>
+									</div>
+									<div class="host_list1_right font_color font_none">
+										21万/110²
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../js/stfc_rent_selling.js"></script>
+	<script>
+		$(function() {
+			$('.sell_hosuelist_left_list1').click(function() {
+				parent.choosehtml(2);
+			})
+		})
+	</script>
+
+</html>

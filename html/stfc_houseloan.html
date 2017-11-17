@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>房屋贷款</title>
+	</head>
+	<link rel="stylesheet" href="../css/stfc_font.css" />
+	<link rel="stylesheet" href="../css/stfc_color.css" />
+	<link rel="stylesheet" href="../css/stfc_base.css" />
+	<link rel="stylesheet" href="../css/stfc_information.css" />
+	<link rel="stylesheet" href="../css/stfc_sellinghouse.css" />
+	<style>
+		.houseloan_location {
+			padding-top: 50px;
+		}
+		
+		.count_height {
+			min-height: 861px;
+			height: 100%;
+			position: relative;
+		}
+		
+		.houseloan_left_list {
+			height: 100%;
+			margin-bottom: 0px !important;
+		}
+		
+		.houseloan_right_list {
+			width: 809px;
+			height: 100%;
+			margin-bottom: 0px !important;
+			padding: 20px 26px;
+		}
+		
+		.houseloan_left_ul>li {
+			color: #808080;
+		}
+	</style>
+
+	<body>
+		<div class="mian">
+			<div class="sellhouse_search">
+				<div class="sell_select1">
+					<select>
+						<option>宿松县</option>
+						<option>宿松县</option>
+						<option>宿松县</option>
+						<option>宿松县</option>
+					</select>
+				</div>
+				<div class="sell_search">
+					<input type="text" placeholder="输入关键字查找          例如：融创尊品 |　聚福园　| 中汇广场" />
+					<img src="../img/bananer_search.png" />
+				</div>
+			</div>
+			<div class="information_location font_margin houseloan_location">
+				您现在的位置 ： 首页 > 房产资讯
+			</div>
+			<div class="information_count font_margin count_height">
+				<div class="information_left div_float font_bg_color3 count_height">
+					<div class="information_left_header font-spacing1  smil_header">房产资讯</div>
+					<div class="information_left_list houseloan_left_list">
+						<ul class="information_left_ul houseloan_left_ul">
+							<li class="left_li">
+								<div class="div_display li_line font_bg_color4">1</div>
+								二手房按揭
+							</li>
+							<li>
+								<div class="div_display li_line">2</div>
+								二手房转按揭
+							</li>
+							<li>
+								<div class="div_display li_line">3</div>
+								住房公积金贷款
+							</li>
+							<li>
+								<div class="div_display li_line">4</div>
+								抵押贷款
+							</li>
+							<li>
+								<div class="div_display li_line">5</div>
+								补按揭贷款
+							</li>
+							<li>
+								<div class="div_display li_line">6</div>
+								同名转
+							</li>
+							<li>
+								<div class="div_display li_line">7</div>
+								房屋产权过户
+							</li>
+							<li>
+								<div class="div_display li_line">8</div>
+								典当
+							</li>
+							<li>
+								<div class="div_display li_line">9</div>
+								个人信用
+							</li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="information_right  font_bg_color2 count_height">
+					<div class="information_right_header">
+						<div class="smileheader div_display font_bg_color4 font_color3 font_aline1">房屋贷款</div>
+					</div>
+					<div class="information_right_list houseloan_right_list">
+
+						<h3 class="font_margin1 font_none">国土部回应“温州房屋产权到期”：自动续期不收费</h3>
+						<p class="information_right_p1 font_color4 font_size14 font_margin1">hahah</p>
+						<div class="information_right_p2 ">
+							<img src="../img/information_1.png" class="div_float" />
+							<span class="font_color4 font_size14 div_float">2016-06-23</span>
+							<img src="../img/information_2.png" class="div_float img12" />
+							<span class="font_color4 font_size14 div_float">416</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+	<script>
+		$(function() {
+			$(".houseloan_left_ul li").click(function() {
+				var text1 = $(this).text();
+				var dex = $(this).index();
+				$(this).addClass("left_li").siblings().removeClass("left_li");
+				$(this).children(".li_line").addClass("font_bg_color4").parents().siblings().children(".li_line").removeClass("font_bg_color4");
+				$(".houseloan_right_list").text(text1)
+			})
+		})
+	</script>
+
+</html>

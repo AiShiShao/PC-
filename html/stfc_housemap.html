@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<title>地图找房</title>
+		<link rel="stylesheet" href="../css/stfc_font.css" />
+		<link rel="stylesheet" href="../css/stfc_color.css" />
+		<link rel="stylesheet" href="../css/stfc_base.css" />
+		<link rel="stylesheet" href="../css/stfc_housemap.css" />
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZsmCkLGn9Y37s3WQXIUQx8G2I0KpSvx7"></script>
+	</head>
+
+	<body>
+		<div class="mian">
+			<div class="map_count ">
+				<div class="font_margin map_count_center">
+					<div class="map_count_header">
+						<div class="map_count_header_search div_float">
+							<input type="text" placeholder="输入关键字查找" />
+							<div class="search_img div_float1 font_bg_color4">
+								<img src="../img/map_search.png" class="div_float" />
+							</div>
+						</div>
+
+						<div class="location_map font_bg_color3 div_float">
+							<img src="../img/location.png" class="div_float" />
+							<span class="font_size14">去租房地图</span>
+						</div>
+
+						<div class="map_select div_float1">
+							<div class="map_select1">
+								<select class="">
+									<option>二手房</option>
+								</select>
+							</div>
+							<div class="map_select1">
+								<select class="">
+									<option>价格</option>
+								</select>
+							</div>
+							<div class="map_select1">
+								<select class="">
+									<option>面积</option>
+								</select>
+							</div>
+							<div class="map_select1">
+								<select class="">
+									<option>户型</option>
+								</select>
+							</div>
+							<div class="map_select1">
+								<select class="">
+									<option>房龄</option>
+								</select>
+							</div>
+							<div class="map_select1">
+								<select class="">
+									<option>楼层</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="map_count_main" id="allmap"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		// 百度地图API功能
+		var map = new BMap.Map("allmap");
+		var point = new BMap.Point(113.665652, 34.75512); //确定标注原点
+		map.centerAndZoom(point, 15);
+		//多个圆心
+		var data_info = [[113.679652, 34.748268,"购物中心","3室2厅1卫"],
+					     [113.665652,34.761679,"华润万象城","3室1厅1厨1卫"],
+					     [113.652765,34.748268,"金源大厦","3室1厅1卫"]
+					];
+		var opt = {
+				width : 250,     // 信息窗口宽度
+				height: 80,     // 信息窗口高度
+				title : "信息窗口" , // 信息窗口标题
+				enableMessage:true//设置允许信息窗发送短息
+			   };
+		
+		
+		for(var i=0;i<data_info.length;i++){
+			    var content1 = data_info[i][2];
+				var content2 = data_info[i][3];
+				var contents = content1 + ','+content2;
+				var newpoint = new BMap.Point(data_info[i][0],data_info[i][1]);
+				
+				
+				//创建圆
+				var circle = new BMap.Circle(newpoint, 500, {
+					strokeColor: "#FF9800", //原型边框颜色
+					strokeWeight: 2,
+					strokeOpacity: 0.5,
+					fillColor: '#FF9800'
+				});
+				var opts = {
+					position: newpoint, // 指定文本标注所在的地理位置
+					offset: new BMap.Size(-35, -30) //设置文本偏移量
+				}
+				var opts2 = {
+					position: newpoint, // 指定文本标注所在的地理位置
+					offset: new BMap.Size(-45, 0) //设置文本偏移量
+				}
+				var label = new BMap.Label(content1,opts); // 创建文本标注对象
+				var label2 = new BMap.Label(content2,opts2); // 创建文本标注对象
+				label.setStyle({
+					color: "#FFF",
+					backgroundColor: 'transparent', //文本背景色
+					borderColor: 'transparent', //文本框边框色
+					fontSize: "16px",
+					height: "20px",
+					lineHeight: "20px",
+					fontFamily: "微软雅黑"
+				});
+				label2.setStyle({
+					color: "#FFF",
+					backgroundColor: 'transparent', //文本背景色
+					borderColor: 'transparent', //文本框边框色
+					fontSize: "16px",
+					height: "20px",
+					lineHeight: "20px",
+					fontFamily: "微软雅黑"
+				});
+				map.addOverlay(circle); //增加圆
+				map.addOverlay(label);
+				map.addOverlay(label2);
+				addClickHandler(contents,newpoint);
+		}
+	function addClickHandler(content,newpoint){
+		circle.addEventListener("click",function(e){
+				openInfo(content,newpoint)
+			
+			}
+	);	
+	}
+	function openInfo(content,e){
+		var newcontent = content.split(",")
+		var sContent ="<div style='width:30em'>"
+						+"<h3 class='font_none line1 ub-ac'>"+newcontent[0]+"</h3>"
+						+"<div style='width:29em' class='div_float font_padding_left2 font_margin_top5'>"
+							+"<p class='font_none line1 ub-ac p1'>"
+							  	+"<span  class='margin10'>户型:</span>"
+								+newcontent[1]
+							+"</p>"
+							+"<div class='font_none line1 font_size18  font_margin8'>"
+								+"<div class='list_area div_float'>"
+								   +"<span  class='margin10'>面积:</span>"
+								   +"<b>126m²</b>"
+								+"</div>"
+								+"<div class='list_price div_float1 margin10'>"
+									+"<span  class='margin10'>价格:</span>"
+									+"<b class='list_price_span'>85万元</b>"
+									+"<span class='list_price_span font_size12'>(6000/平方米)</span>"
+								+"</div>"
+							+"</div>"
+							+"<div class='font_list_phone font_none font_color5'>"
+									+"<span  class='margin10'>电话:</span>"
+									+"<span>17734789773</span>"
+							+"</div>"
+						+"</div>"
+						+ "<img style='float:left;margin:6px 10px' id='imgDemo' src='../img/bananer.png' width='139' height='104' title=''/>" 
+						+ "<img style='float:left;margin:6px 10px' id='imgDemo' src='../img/bananer.png' width='139' height='104' title=''/>" 
+						+ "<img style='float:left;margin:6px 10px' id='imgDemo' src='../img/bananer.png' width='139' height='104' title=''/>" 
+					+"</div>";
+		var points = new BMap.Point(e.lng, e.lat);
+		var infoWindow = new BMap.InfoWindow(sContent);  // 创建信息窗口对象 
+		map.openInfoWindow(infoWindow,points); //开启信息窗口
+	}
+		var overView = new BMap.OverviewMapControl();
+		var overViewOpen = new BMap.OverviewMapControl({ isOpen: true, anchor: BMAP_ANCHOR_BOTTOM_RIGHT });
+		//添加地图类型和缩略图
+		map.setCurrentCity("郑州"); //由于有3D图，需要设置城市哦
+		map.addControl(overView); //添加默认缩略地图控件
+		map.addControl(overViewOpen); //右下角，打开
+		
+	
+		
+	</script>
+
+</html>

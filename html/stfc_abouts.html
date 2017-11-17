@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>关于我们</title>
+	</head>
+	<link rel="stylesheet" href="../css/stfc_font.css" />
+	<link rel="stylesheet" href="../css/stfc_color.css" />
+	<link rel="stylesheet" href="../css/stfc_base.css" />
+	<link rel="stylesheet" href="../css/stfc_information.css" />
+	<style>
+		.about_location{padding-top: 50px;}
+		.count_height{height: 540px;}
+		.about_left_list{height:490px;margin-bottom: 0px !important;}
+		.about_right_list{width:809px;height:450px;margin-bottom: 0px !important;padding: 20px 26px;}
+		.about_li{border-left: 4px solid #f4892b;}
+		.about_left_ul >li{color: #808080;}
+	</style>
+	<body>
+		<div class="mian">
+			<div class="information_location font_margin about_location">
+				 您现在的位置 ： 首页 > 关于我们
+			</div>
+			<div class="information_count font_margin count_height">
+				<div class="information_left div_float font_bg_color3 count_height">
+					<div class="information_left_header font-spacing1  smil_header">关于顺通</div>
+					<div class="information_left_list about_left_list">
+						<ul class="information_left_ul about_left_ul">
+							<li >
+								
+								关于我们
+							</li>
+							<li class="about_li">
+						
+								企业文化
+							</li>
+							<li>
+							
+								服务流程
+							</li>
+							<li>
+								
+								招贤纳士
+							</li>
+							<li>
+								
+								门店导航
+							</li>
+							<li>
+							
+								联系我们
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="information_right  font_bg_color2 count_height">
+					<div class="information_right_header">
+						<div class="smileheader div_display font_bg_color4 font_color3 font_aline1">公司简介</div>
+					</div>
+					<div class="information_right_list about_right_list">
+						
+								<h3 class="font_margin1 font_none">国土部回应“温州房屋产权到期”：自动续期不收费</h3>
+								<p class="information_right_p1 font_color4 font_size14 font_margin1">国土资源部副部长王广华在今天的《自然资源统一确权登记办法（试行）》新闻发布会上表示，针对温州当地二十年住房土地使用权到期问题，
+								国土资源部副部长王广华在今天的《自然资源统一确权登记办法（试行）》新闻发布会上表示，针对温州当地二十年住房土地使用权到期问题国土资源部副部长王广华在今天的《自然资源统一确权登记办法（试行）》新闻发布会上表示，针对温州当地二十年住房土地使用权到期问题
+								国土资源部副部长王广华在今天的《自然资源统一确权登记办法（试行）》新闻发布会上表示，针对温州当地二十年住房土地使用权到期问题国土资源部副部长王广华在今天的《自然资源统一确权登记办法（试行）》新闻发布会上表示，针对温州当地二十年住房土地使用权到期问题
+								</p>
+							    <div class="information_right_p2 ">
+							    	<img src="../img/information_1.png" class="div_float" />
+							    	<span class="font_color4 font_size14 div_float">2016-06-23</span>
+							    	<img src="../img/information_2.png" class="div_float img12"/>
+							    	<span class="font_color4 font_size14 div_float">416</span>
+							    </div>
+					
+					</div>
+				    <div class="information_details">
+				    	<h3></h3>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js" ></script>
+	<script>
+		$(function(){
+			$(".about_left_ul li").click(function(){
+				var left_choose = $(this).text();
+				$(this).addClass("about_li").siblings().removeClass("about_li");
+				$(".about_right_list").text(left_choose)
+			})
+		})
+	</script>
+</html>

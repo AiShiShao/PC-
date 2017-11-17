@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录和注册</title>
+	</head>
+	<link rel="stylesheet" href="../css/stfc_font.css" />
+	<link rel="stylesheet" href="../css/stfc_color.css" />
+	<link rel="stylesheet" href="../css/stfc_base.css" />
+	<link rel="stylesheet" href="../css/stfc_home.css" />
+	<link rel="stylesheet" href="../css/stfc_login.css" />
+
+	<body>
+		<div class="mian login_mian">
+			<div class="login_mian_center font_margin">
+				<div class="login_left div_float">
+					<div class="login_left2"></div>
+					<div class="login_title"><img src="../img/logintitle.png" /> </div>
+				</div>
+				<div class="login_right div_float1 font_bg_color2">
+					<div class="login_right_header font_aline1 font_bg_color4 font_color3 font-spacing5">欢迎登录顺通房产</div>
+					<div class="login_right_submit">
+						<div class="long_register font_size24">
+							用户登录
+							<p class="div_display font_size12 font_aline2 div_float1 font-spacing1">没有顺通网账号？
+								<a href="stfc_register.html" class=" font_color">马上注册！</a>
+							</p>
+						</div>
+						<div>
+							<input type="text" class="login_iput" placeholder="用户名/手机号" />
+						</div>
+						<div>
+							<input type="text" class="login_iput" placeholder="密码" />
+						</div>
+						<div>
+							<input type="text" class="login_iput" placeholder="请输入验证码" />
+						</div>
+						<div class="login_yzm1">
+							<div class="login_yzm div_float"></div>
+							<p class="font_curson font_aline2 div_float font-spacing1 login_yzm_text">点击图片换一张</p>
+						</div>
+						<div class="login_bottom1">
+							<div class="font_margin7 div_float">
+								<input type="checkbox" />
+							</div>
+							<p class="font_curson font_aline2 div_float font-spacing1 ">下次自动登录</p>
+							<div class="div_float1">找回密码</div>
+						</div>
+						<div class="login_submit font_aline1 font_bg_color4 font-spacing1 font_color3">立即登录</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+	<script>
+		$(function() {
+			$("#logo").click(function() {
+				window.location.href = "stfc_header.html";
+			})
+		})
+	</script>
+
+</html>

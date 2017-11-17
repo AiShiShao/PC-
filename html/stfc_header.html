@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>顺通房产</title>
+	</head>
+	<link rel="stylesheet" href="../css/stfc_font.css" />
+	<link rel="stylesheet" href="../css/stfc_color.css" />
+	<link rel="stylesheet" href="../css/stfc_base.css" />
+	<link rel="stylesheet" href="../css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../css/stfc_home.css" />
+
+	<body>
+		<div class="wrap">
+			<div class="header">
+				<div class="header_top">
+					<div class="header_top_center ">
+						<div class="div_float font_size14 thiscity">在线咨询</div>
+						<div class="div_float1 font_size14">
+							<a onclick="gologin(0)">登录</a>
+							/
+							<a onclick="gologin(1)">注册</a>
+						</div>
+					</div>
+
+					<div class="header_top_center header_none">
+						<div class="div_float font_size14 ">您好！请登录以获取房源，新客户？点击这里注册！</div>
+						<div class="div_float1 font_size14">
+							<div class="login_header">
+								<img src="../img/home.png" />
+								<span>设置为首页</span>
+							</div>
+							<div class="login_header">
+								<img src="../img/shoucang.png" />
+								<span>加入收藏</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="header_center">
+					<div class="header_center_one">
+						<div class="header_center_one_img">
+							<img src="../img/logo.png" />
+						</div>
+						<div class="div_float1 header_one_right">
+							<img src="../img/logo_phone.png" class="div_float" />
+							<div class="div_float">
+								<h3 class="font_size24 font_color1 font_indent2 font-spacing1 font_margin1">13383733455</h3>
+								<p class="font_size12 font_inde">【房源打印服务由易房大师提供】</p>
+							</div>
+						</div>
+					</div>
+					<div class="header_center_two">
+						<ul class="header_center_two_ul">
+							<li class="font_color">首页</li>
+							<li>全景看房</li>
+							<li>出售房</li>
+							<li>出租房</li>
+							<li>房产资讯</li>
+							<li>经纪人</li>
+							<li>房屋贷款</li>
+							<li>地图找房</li>
+							<li>问答</li>
+							<li>顺通分店</li>
+							<li>关于顺通</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="main" id="main" style="height: 100%;margin: 0px !important;padding: 0px !important;">
+				<iframe id="frames" name="choose_house" src="stfc_home.html" width="100%" border="0" marginwidth='0' marginheight="0" scrolling="no" frameborder="no" style="margin: 0px ;padding:0px;border-style: none;border: 0px;"> </iframe>
+			</div>
+			<div class="footer">
+
+				<div class="footer_center font_margin">
+					<p class="font_aline footer_center_text ">
+						<span class="font_margin5">版权所有：宿松县顺通房产中介有限公司    </span>
+						<span>ICP备13005385号  </span>
+						<span> 技术支持：易房大师</span>
+					</p>
+					<img src="../img/footer_logo.png" class="footer_logo" />
+				</div>
+				<div class="footer_bottom">
+					<p class="font_aline1">友情链接： 宿松房产网 | 宿松房产经纪人 |　凤凰网　| 宿松人民政府网 | 中国安徽</p>
+				</div>
+			</div>
+		</div>
+<div class="map_count_main" id="allmap"></div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+	<script type="text/javascript" src="../js/stfc_header.js"></script>
+	<script type="text/javascript" src="../js/stfc_base.js"></script>
+	<!--百度地图-->
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=HStXbYGODDdb29xt9uUTZtbqIAtjQcoF"></script>
+	<script>
+		$(function() {
+			setTimeout(function() {
+				var main = $(document.getElementById('frames').contentWindow.document.body).find('.mian');
+				
+				
+				var mainheight = main.height();
+				
+				$("#frames").height(mainheight)
+			}, 300)
+			
+			
+			
+
+		})
+		//地图获取当前位置
+			// 百度地图API功能
+	var map = new BMap.Map("allmap");
+	var point = new BMap.Point(116.331398,39.897445);
+	map.centerAndZoom(point,12);
+
+	function myFun(result){
+		var cityName = result.name;
+		map.setCenter(cityName);
+		alert("当前定位城市:"+cityName);
+		$(".thiscity").text(cityName)
+	}
+	var myCity = new BMap.LocalCity();
+	myCity.get(myFun);
+	</script>
+
+</html>
